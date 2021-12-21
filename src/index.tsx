@@ -1,9 +1,10 @@
 import * as React from 'react'
 import { Button, NativeModules, StyleSheet, Text, View } from 'react-native'
+import NCButton from './Button'
 
 export const addOne = (input: number) => input + 1
 
-export const Counter = () => {
+const Counter = () => {
   const [count, setCount] = React.useState(0)
 
   return (
@@ -14,6 +15,8 @@ export const Counter = () => {
   )
 }
 
+export { Counter, NCButton }
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -23,4 +26,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default NativeModules.RNModuleTemplateModule
+export default NativeModules.RNNinjaComponentsOneModule

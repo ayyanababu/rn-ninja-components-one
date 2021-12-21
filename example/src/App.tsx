@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react'
-import RNModuleTemplateModule, { Counter } from 'react-native-module-template'
+import RNNinjaComponentsOneModule, {
+  Counter,
+  NCButton,
+} from 'rn-ninja-components-one'
 
 const App = () => {
   useEffect(() => {
-    console.log(RNModuleTemplateModule)
+    console.log(RNNinjaComponentsOneModule)
   })
 
   return <Counter />
