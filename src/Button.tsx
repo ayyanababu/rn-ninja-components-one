@@ -1,8 +1,12 @@
-import { Button } from 'native-base'
+import { Button, NativeBaseProvider } from 'native-base'
 import React from 'react'
 
 const NCButton = () => {
-  return <Button colorScheme='success'>Success</Button>
+  return (
+    <NativeBaseProvider>
+      <Button colorScheme='success'>Success</Button>
+    </NativeBaseProvider>
+  )
 }
 
 export default NCButton
